@@ -31,7 +31,13 @@ public class AcademicService implements IAcademicService {
 	@Override
 	public int save(Academic a) {
 		// TODO Auto-generated method stub
-		return 0;
+		int res = 0;
+		Academic academic = data.save(a);
+		
+		if (!academic.equals(null)) {
+			res = 1;  
+		}
+		return res;
 	}
 
 	@Override
