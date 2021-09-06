@@ -15,12 +15,37 @@
 			<form th:action="@{/save}" th:object="${academic}" method="POST">
 				<div class="card">
 					<div class="card-header">
-						<H3>ACADEMICO</H3>
+						<H3>ACADEMIC</H3>
 					</div>
 					<div class="card-body">
 						` <div class="form-group">
-							<label>ID</label>
+							<label>Id</label>
 							<input th:field="*{id_academic}" type="text" class="form-control" />
+							<br>
+							<label>Last name</label>
+							<input th:field="*{last_name}" type="text" class="form-control" />
+							<br>
+							<label>Phone</label>
+							<input th:field="*{phone}" type="number" class="form-control" />
+							<br>
+							<label>Email</label>
+							<input th:field="*{email}" type="email" class="form-control" />
+							<br>
+							<label>Address</label>
+							<input th:field="*{address}" type="text" class="form-control" />
+							<br>
+							<label>Birthdate</label>
+							<input th:field="*{birthdate}" type="text" class="form-control" />
+							<br>
+							<label>Resume</label>
+							<input th:field="*{resumen}" type="text" class="form-control" />
+							<br>
+							<label>Created Date</label>
+							<input th:field="*{createdDate}" type="text" class="form-control" />
+							<br>
+							<label>Update Date</label>
+							<input th:field="*{updatedDate}" type="text" class="form-control" />
+							<br>
 						</div>
 					</div>
 					<div class="card-footer">

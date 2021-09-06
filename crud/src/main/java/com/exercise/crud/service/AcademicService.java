@@ -16,6 +16,8 @@ public class AcademicService implements IAcademicService {
 
 	@Autowired
 	private IAcademic data;
+	
+	//FacadeService facade = new FacadeService();
 	@Override
 	public List<Academic> getAll() {
 		// TODO Auto-generated method stub
@@ -25,7 +27,8 @@ public class AcademicService implements IAcademicService {
 	@Override
 	public Optional<Academic> getById(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		return data.findById(id);
 	}
 
 	@Override
@@ -43,6 +46,7 @@ public class AcademicService implements IAcademicService {
 	@Override
 	public void delete(int id) {
 		// TODO Auto-generated method stub
+		data.deleteById(id);
 		
 	}
 
