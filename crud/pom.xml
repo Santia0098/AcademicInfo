@@ -17,10 +17,12 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
+	<!--  
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+	-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -42,17 +44,19 @@
 		</dependency>
 		
 		<!-- ////////////////////////////////////////////////////////// -->
-		<dependency>
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-core</artifactId>
-    		<version>4.3.11.Final</version>
+
+		 <dependency>
+  			<groupId>org.hibernate</groupId>
+  			<artifactId>hibernate-core</artifactId>
+  			<version>3.6.8.Final</version>
 		</dependency>
+
 		<dependency>
+  			<groupId>org.hibernate</groupId>
+  			<artifactId>hibernate-entitymanager</artifactId>
+  			<version>3.6.8.Final</version>
+		</dependency>
 		
-    		<groupId>org.hibernate</groupId>
-    		<artifactId>hibernate-entitymanager</artifactId>
-   			<version>4.3.11.Final</version>
-        </dependency>
 	</dependencies>
 
 	<build>	
@@ -65,24 +69,3 @@
 	</build>
 
 </project>
-
-
-
-
-
-
-<!--DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
- 3: <hibernate-configuration>
- 4:   <session-factory>
- 5:     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
- 6:     <property name="connection.url">jdbc:mysql://localhost:3306/trackAcademic?serverTimeZone=UTC</property>
- 7:     <property name="connection.username">root</property>
- 8:     <property name="connection.password">123456789</property>
- 9:     <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-10:     <property name="hibernate.show_sql">true</property>
-11:
-12:     <mapping resource="ejemplo1/Hibernate.hbm.xml"/>
-13:     <mapping class="ejemplo1.Hibernate"/>
-14:
-15:   </session-factory>
-16: </hibernate-configuration>-->

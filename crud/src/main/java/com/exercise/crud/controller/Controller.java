@@ -16,7 +16,10 @@ import com.exercise.crud.model.Courses;
 
 @org.springframework.stereotype.Controller
 @RequestMapping
+
 public class Controller {
+
+	
 
 	@Autowired
 	private IAcademicService service;
@@ -44,7 +47,7 @@ public class Controller {
 	
 	@GetMapping("/edit/{id_academic}")
 	public String edit(@PathVariable int id_academic, Model model) {
-		Optional<Academic> academic = service.getById(id_academic);
+		List<Academic> academic = service.getById(id_academic);
 		model.addAttribute("academic", academic);
 		return "form";
 	}

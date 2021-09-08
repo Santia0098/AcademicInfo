@@ -10,7 +10,7 @@ public interface IAcademicService {
 	
 	
 	public List<Academic> getAll();
-	public Optional<Academic> getById(int id_academic);
+	public List<Academic> getById(int id_academic);
 	public int save(Academic a);
 	public void delete(int id_academic);
 }

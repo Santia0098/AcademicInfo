@@ -1,9 +1,10 @@
-package com.exercise.crud.service;
+/*package com.exercise.crud.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import com.exercise.crud.interfaceService.IAcademicService;
@@ -13,6 +14,8 @@ import com.exercise.crud.model.Academic;
 
 @Service
 public class AcademicService implements IAcademicService {
+	
+	
 
 	@Autowired
 	private IAcademic data;
@@ -25,7 +28,7 @@ public class AcademicService implements IAcademicService {
 	}
 
 	@Override
-	public Optional<Academic> getById(int id) {
+	public List<Academic> getById(int id) {
 		// TODO Auto-generated method stub
 		
 		return data.findById(id);
@@ -50,4 +53,4 @@ public class AcademicService implements IAcademicService {
 		
 	}
 
-}
+}*/
